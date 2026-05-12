@@ -1,0 +1,102 @@
+{
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy)",
+  "emotional_tone": "Trust, Stability, Calm, Professionalism",
+  "colors": {
+    "background_base": "#F9F8F6",
+    "background_surface": "#FFFFFF",
+    "background_secondary": "#F2F0ED",
+    "primary": "#2A3B32",
+    "primary_hover": "#3D5247",
+    "accent_terracotta": "#C45E4C",
+    "accent_moss": "#4A6B53",
+    "text_main": "#1A1A1A",
+    "text_muted": "#5C5C5C",
+    "border": "#E5E2DC",
+    "destructive": "#C45E4C",
+    "success": "#4A6B53"
+  },
+  "typography": {
+    "font_families": {
+      "heading": "'Outfit', sans-serif",
+      "body": "'Manrope', sans-serif",
+      "mono": "'IBM Plex Mono', monospace"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl font-light tracking-tight text-[#1A1A1A]",
+      "h2": "text-2xl sm:text-3xl font-medium tracking-tight text-[#1A1A1A]",
+      "h3": "text-xl sm:text-2xl font-medium tracking-tight",
+      "h4": "text-lg font-semibold",
+      "body": "text-sm md:text-base font-normal leading-relaxed text-[#5C5C5C]",
+      "label": "text-xs font-bold uppercase tracking-[0.2em] text-[#5C5C5C]"
+    }
+  },
+  "layout_and_spacing": {
+    "strategy": "The 'Control Room' Grid Protocol",
+    "container_padding": "p-6 md:p-8",
+    "grid_gap": "gap-4 md:gap-6",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4",
+    "widget_spans": {
+      "kpi_summary": "col-span-1",
+      "main_chart": "col-span-1 md:col-span-2 lg:col-span-3 row-span-2",
+      "feed_list": "col-span-1 row-span-2"
+    },
+    "surface_styles": {
+      "dashboard_cards": "bg-white border border-[#E5E2DC] rounded-lg p-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)] transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:border-[#2A3B32]/30",
+      "navigation": "bg-[#F9F8F6]/80 backdrop-blur-xl border-b border-[#E5E2DC] sticky top-0 z-50",
+      "landing_hero_overlay": "bg-black/30"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#2A3B32] text-white hover:bg-[#3D5247] hover:text-white px-6 py-2 rounded-md font-medium transition-colors",
+      "secondary": "bg-[#F2F0ED] text-[#1A1A1A] hover:bg-[#E5E2DC] hover:text-[#1A1A1A] px-6 py-2 rounded-md font-medium transition-colors",
+      "outline": "border border-[#E5E2DC] text-[#1A1A1A] hover:border-[#2A3B32] hover:bg-[#F9F8F6] hover:text-[#1A1A1A] px-6 py-2 rounded-md font-medium transition-colors"
+    },
+    "tables": "w-full text-left text-sm text-[#5C5C5C] border-collapse. Headers should be uppercase labels tracking-[0.2em]. Rows separated by border-b border-[#E5E2DC].",
+    "forms": "Use Shadcn inputs heavily customized to remove generic Vercel focus rings. Use focus:border-[#2A3B32] focus:ring-1 focus:ring-[#2A3B32]. Avoid native datepickers.",
+    "icons": "Use 'lucide-react' for all functional icons. Stroke width 1.5. No emojis.",
+    "charts": "Use Recharts or Shadcn charts. Lines: #2A3B32. Bars: #4A6B53. Tooltips must be styled with the dashboard card surface styling."
+  },
+  "animations": {
+    "interactions": "Micro-interactions on hover. Hover state color must be explicitly defined. Slight lift (-translate-y-1) on cards.",
+    "transitions": "transition: transform 0.2s ease, opacity 0.2s ease, border-color 0.2s ease",
+    "accessibility": "respect prefers-reduced-motion"
+  },
+  "media": {
+    "instructions": "MUST use the following exact image URLs for the specified components. NEVER use placeholder services like via.placeholder.com. Use standard lucide-react icons for abstract representations if images are not suitable.",
+    "urls": [
+      {
+        "category": "landing_page_hero_background",
+        "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBzcHJlYWRzaGVldCUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NzgzNzY3NzN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Background image for the authentication and landing pages. Use with max black/30 overlay."
+      },
+      {
+        "category": "auth_page_sidebar_image",
+        "url": "https://images.unsplash.com/photo-1686061592689-312bbfb5c055?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjBzcHJlYWRzaGVldCUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NzgzNzY3NzN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Split screen image for login/register page"
+      },
+      {
+        "category": "paypal_integration_logo_fallback",
+        "url": "https://images.unsplash.com/photo-1641350625112-3b1d73c71418?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxwYXlwYWwlMjBzdHJpcGUlMjBsb2dvfGVufDB8fHx8MTc3ODM3Njc3M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Fallback photo logo for PayPal integration card in the settings/marketplace view."
+      },
+      {
+        "category": "generic_payment_provider_fallback",
+        "url": "https://images.unsplash.com/photo-1652017687934-d14ec6280dd5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxwYXlwYWwlMjBzdHJpcGUlMjBsb2dvfGVufDB8fHx8MTc3ODM3Njc3M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Fallback photo logo for Stripe/Skrill integration card in the settings/marketplace view."
+      }
+    ]
+  },
+  "testing": {
+    "attributes": "All interactive and key informational elements MUST include a 'data-testid' attribute using kebab-case, role-based naming (e.g., 'submit-payment-btn', 'revenue-kpi-card', 'nav-ledger-link')."
+  },
+  "instructions_to_main_agent": [
+    "Ensure 'lucide-react' is used for UI icons. Do not use emojis.",
+    "Load Google Fonts 'Outfit' and 'Manrope' in the frontend app entry point.",
+    "Implement the 'Control Room' grid layout for the financial dashboard, strictly using col-span/row-span properties to maximize screen utilization. Maintain gap-6 between cards.",
+    "For the Landing page and Auth pages, use the provided Unsplash URLs. Apply a black/30 overlay maximum on the hero image to ensure it is visible while keeping text readable.",
+    "Apply 'data-testid' attributes to every button, input, navigation link, and KPI card.",
+    "Adhere strictly to the color palette. Do not use default Tailwind blues or indigos. The app must feel earthy, solid, and mature."
+  ]
+}
