@@ -1,0 +1,10 @@
+{
+    "name": "finance",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "finance",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}

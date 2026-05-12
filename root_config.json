@@ -1,0 +1,5 @@
+{
+    "name": "Triggers",
+    "provider_region": "gcp-asia-south1",
+    "deployment_model": "LOCAL"
+}
